@@ -1,0 +1,219 @@
+/* General Styling */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #f2f2f2;
+}
+
+/* Section Styling */
+section {
+    padding: 100px 50px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-start; /* Align items at the start */
+    align-items: center;
+    padding: 0; /* Remove padding for full height */
+    background-color: rgba(255, 255, 255, 0.9);
+    min-height: 100vh; /* Full height */
+}
+
+.welcome-text {
+    position: absolute; /* Position it at the center top */
+    top: 80px; /* Space from the navbar */
+    text-align: center;
+    font-size: 36px; /* Adjust font size */
+    color: #5196c1; /* Change color if needed */
+    z-index: 1; /* Ensure it appears above other elements */
+}
+
+.home-main {
+    display: flex;
+    width: 100%; /* Full width */
+    max-width: none; /* Remove max width to allow full screen */
+    justify-content: space-between;
+    align-items: stretch; /* Ensure left and right fill the height */
+    background: rgba(255, 255, 255, 0.8);
+    padding: 60px 0; /* Add vertical padding to separate divisions */
+    margin-top: 100px; /* Ensure space below the welcome text */
+}
+.home-left{
+    background-color: #F96167;
+}
+.home-right{
+    background-color: #F9E795;
+}
+.home-left,
+.home-right {
+    flex: 1; /* Ensure both sides take equal space */
+    padding: 40px; /* Add padding for internal spacing */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.home-left h2 {
+    font-size: 32px; /* Adjust as needed */
+    color: #444;
+}
+
+.home-left p {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #fffbfb;
+}
+
+.home-right {
+    text-align: center;
+}
+
+.home-right img {
+    max-width: 80%; /* Adjust max width for better spacing */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Achievements Section */
+#achievements {
+    background-color: rgba(245, 245, 245, 0.9);
+    overflow: hidden; /* Hide overflowing content */
+    position: relative; /* Position relative for absolute child */
+    min-height: 300px; /* Adjust height as needed */
+    text-align: center; /* Center align text */
+}
+
+.achievement-container {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the items */
+    transition: transform 0.5s ease; /* Smooth transition for sliding */
+}
+
+.achievement-item {
+    display: none; /* Hide all images by default */
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center align the text */
+}
+
+.achievement-item.active {
+    display: flex; /* Show the active image */
+}
+
+.achievement-item img {
+    max-width: 100%; /* Allow images to take the full width of their container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 400px; /* Increase the maximum height */
+}
+
+.dots {
+    text-align: center; /* Center align the dots */
+    margin-top: 20px; /* Space between images and dots */
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb; /* Default color for inactive dots */
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171; /* Color for active dot */
+}
+
+
+/* Contact Section */
+#contact {
+    background-color: rgba(249, 183, 183, 0.9);
+}
+
+#contact p {
+    font-size: 18px;
+    color: #444;
+}
+
+#contact a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+#about{
+    background-color: #f2e5ac;
+}
+#projects{
+    background-color: rgb(201, 247, 201);
+}
+/* About Me Font Color */
+#abt{
+    color: #d97707;
+}
+#proj{
+    color: #071fd9;
+}
+#stressdet{
+    color: #f8223b;
+    font-size: 22px;
+}
